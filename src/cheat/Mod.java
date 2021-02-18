@@ -1,7 +1,7 @@
-package paulieg626.cheat;
+package cheat;
 
 import mindustry.mod.Mod;
-import paulieg626.cheat.content.*;
+import cheat.content.*;
 
 public class Mod extends Mod{
 

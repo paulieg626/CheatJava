@@ -1,4 +1,4 @@
-package betamindy.content;
+package cheat;
 
 import arc.graphics.*;
 import arc.graphics.g2d.*;
