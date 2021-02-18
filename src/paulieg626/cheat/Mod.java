@@ -3,7 +3,7 @@ package paulieg626.cheat;
 import mindustry.mod.Mod;
 import paulieg626.cheat.content.*;
 
-public class ModTemplate extends Mod{
+public class Mod extends Mod{
 
     @Override
     public void init(){

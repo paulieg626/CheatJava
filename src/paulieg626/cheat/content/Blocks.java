@@ -27,7 +27,7 @@ import mindustry.world.meta.*;
 
 import static mindustry.type.ItemStack.with;
 
-public class MindyBlocks implements ContentList {
+public class Blocks implements ContentList {
     
     public static Block
     //evironmentment
@@ -40,6 +40,7 @@ public class MindyBlocks implements ContentList {
     //logic
     //turrets
     //power
+    //Testing
     test;
 
     @Override
