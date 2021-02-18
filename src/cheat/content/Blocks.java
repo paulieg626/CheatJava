@@ -37,15 +37,18 @@ public class Blocks implements ContentList {
           requirements(Category.distribution, with(Items.copper, 0));
         }};
         liquid = new LiquidSource("liquid"){{
-          size = 1;
-          update = true;
-          liquidCapacity = 30;
-          health = Integer.MAX_VALUE;
-          alwaysUnlocked=true;
-          requirements(Category.liquid, with(Items.copper, 0));
             @Override
             public void update(){
                 this.health = Integer.MAX_VALUE;
+                super.update();
+            }
+            {
+                size = 1;
+                update = true;
+                liquidCapacity = 30;
+                health = Integer.MAX_VALUE;
+                alwaysUnlocked=true;
+                requirements(Category.liquid, with(Items.copper, 0));
             }
         }};
     }
