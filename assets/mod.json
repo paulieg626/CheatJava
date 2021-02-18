@@ -1,0 +1,11 @@
+{
+  "name": "cheat",
+  "displayName": "CheatMod",
+  "author": "[#8738ff[]]paulieg626[[]]",
+  "description": "Java test",
+  "version": "2.3",
+  "main": "paulieg626.cheat",
+  "minGameVersion": "105",
+  "dependencies": [],
+  "hidden": false
+}
