@@ -36,7 +36,7 @@ public class Blocks implements ContentList {
           alwaysUnlocked=true;
           requirements(Category.distribution, with(Items.copper, 0));
         }};
-        liquid = new LiquidSource("liquid"){{
+        liquid = new LiquidSource("liquid"){
             @Override
             public void update(){
                 this.health = Integer.MAX_VALUE;
@@ -50,6 +50,6 @@ public class Blocks implements ContentList {
                 alwaysUnlocked=true;
                 requirements(Category.liquid, with(Items.copper, 0));
             }
-        }};
+        };
     }
 }
