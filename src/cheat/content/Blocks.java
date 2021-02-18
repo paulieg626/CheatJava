@@ -1,4 +1,4 @@
-package cheat;
+package cheat.content;
 
 import arc.graphics.*;
 import arc.graphics.g2d.*;
