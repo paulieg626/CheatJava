@@ -13,6 +13,7 @@ import mindustry.world.*;
 import mindustry.world.blocks.defense.*;
 import mindustry.world.blocks.experimental.*;
 import mindustry.world.blocks.storage.*;
+import mindustry.world.blocks.sandbox.*;
 import mindustry.world.meta.*;
 
 import static mindustry.type.ItemStack.with;
