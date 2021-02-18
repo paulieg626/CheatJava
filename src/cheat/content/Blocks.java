@@ -45,7 +45,7 @@ public class Blocks implements ContentList {
           size = 1;
           update = true;
           itemCapacity = 30;
-          health = Number.MAX_VALUE;
+          health = Integer.MAX_VALUE;
           requirements(Category.defense, with(Items.lead, 6));
         }};
     }
