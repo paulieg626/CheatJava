@@ -33,14 +33,16 @@ public class Blocks implements ContentList {
           update = true;
           itemCapacity = 30;
           health = Integer.MAX_VALUE;
-          requirements(Category.defense, with(Items.copper, 0),true);
+          alwaysUnlocked=true;
+          requirements(Category.distribution, with(Items.copper, 0));
         }};
-        item = new LiquidSource("liquid"){{
+        liquid = new LiquidSource("liquid"){{
           size = 1;
           update = true;
-          itemCapacity = 30;
+          liquidCapacity = 30;
           health = Integer.MAX_VALUE;
-          requirements(Category.defense, with(Items.copper, 0),true);
+          alwaysUnlocked=true;
+          requirements(Category.liquid, with(Items.copper, 0));
         }};
     }
 }
