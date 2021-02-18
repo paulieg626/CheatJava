@@ -3,7 +3,7 @@ package cheat;
 import mindustry.mod.Mod;
 import cheat.content.*;
 
-public class Mod extends Mod{
+public class MainMod extends Mod{
 
     @Override
     public void init(){
