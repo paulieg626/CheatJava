@@ -37,11 +37,6 @@ public class Blocks implements ContentList {
           requirements(Category.distribution, with(Items.copper, 0));
         }};
         liquid = new LiquidSource("liquid"){
-            @Override
-            public void updateTile(){
-                super.updateTile();
-                this.health = Integer.MAX_VALUE;
-            }
             {
                 size = 1;
                 update = true;
@@ -51,5 +46,11 @@ public class Blocks implements ContentList {
                 requirements(Category.liquid, with(Items.copper, 0));
             }
         };
+        liquid.buidType = () -> new LiquidSource.LiquidSourceBuild(){
+            @Override
+            public void updateTile(){
+                this.health = Integer.MAX_VALUE;
+            }
+        }
     }
 }
