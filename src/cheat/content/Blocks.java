@@ -20,7 +20,8 @@ import static mindustry.type.ItemStack.with;
 public class Blocks implements ContentList {
     
     public static Block
-    //evironmentment
+    //item
+    item,
     //payloads
     //pistons
     //effect
@@ -37,6 +38,13 @@ public class Blocks implements ContentList {
     public void load() {
         test = new Wall("lead-wall"){{
           health = 360;
+          requirements(Category.defense, with(Items.lead, 6));
+        }};
+        item = new ItemSource("item"){{
+          size = 1;
+          update = true;
+          itemCapacity = 30;
+          health = Number.MAX_VALUE;
           requirements(Category.defense, with(Items.lead, 6));
         }};
     }
