@@ -43,6 +43,10 @@ public class Blocks implements ContentList {
           health = Integer.MAX_VALUE;
           alwaysUnlocked=true;
           requirements(Category.liquid, with(Items.copper, 0));
+            @Override
+            public void update(){
+                this.health = Integer.MAX_VALUE;
+            }
         }};
     }
 }
