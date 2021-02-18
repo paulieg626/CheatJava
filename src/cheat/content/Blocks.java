@@ -23,30 +23,24 @@ public class Blocks implements ContentList {
     public static Block
     //item
     item,
-    //payloads
-    //pistons
-    //effect
-    //walls
-    //drills
-    //units
-    //logic
-    //turrets
-    //power
-    //Testing
-    test;
+    //liquid
+    liquid;
 
     @Override
     public void load() {
-        test = new Wall("lead-wall"){{
-          health = 360;
-          requirements(Category.defense, with(Items.lead, 6));
-        }};
         item = new ItemSource("item"){{
           size = 1;
           update = true;
           itemCapacity = 30;
           health = Integer.MAX_VALUE;
-          requirements(Category.defense, with(Items.lead, 6));
+          requirements(Category.defense, with(Items.copper, 0),true);
+        }};
+        item = new LiquidSource("liquid"){{
+          size = 1;
+          update = true;
+          itemCapacity = 30;
+          health = Integer.MAX_VALUE;
+          requirements(Category.defense, with(Items.copper, 0),true);
         }};
     }
 }
