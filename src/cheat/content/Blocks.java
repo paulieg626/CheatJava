@@ -57,6 +57,13 @@ public class Blocks implements ContentList {
                     public void update() {
                         this.health = Integer.MAX_VALUE;
                     }
+                    @Override
+                    public void buildConfiguration(Table table) {
+                      table.button(new TextureRegionDrawable(Core.atlas.find("copper")), Styles.clearToggleTransi, () -> { 
+                        Vars.control.input.frag.config.hideConfig(); 
+                        Log.info("lol"); 
+                      });
+                    }
                 };
             }
         };
