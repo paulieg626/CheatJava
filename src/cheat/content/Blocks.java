@@ -39,18 +39,18 @@ public class Blocks implements ContentList {
             }
         };
         liquid = new LiquidSource("liquid"){
+            public Prov<Building> build = new Building(){
+                @Override
+                public void update(){
+                }
+            }
             {
                 size = 1;
                 update = true;
                 liquidCapacity = 30;
                 health = Integer.MAX_VALUE;
                 alwaysUnlocked=true;
-                buidType = new Building(){
-                    @Override
-                    public void updateTile(){
-                        //this.health = Integer.MAX_VALUE;
-                    }
-                };
+                buidType = build;
                 requirements(Category.liquid, with(Items.copper, 0));
             }
         };
