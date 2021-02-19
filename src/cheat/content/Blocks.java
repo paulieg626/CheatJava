@@ -77,10 +77,9 @@ public class Blocks implements ContentList {
             {
                 size = 1;
                 update = true;
-                liquidCapacity = 30;
                 health = Integer.MAX_VALUE;
                 alwaysUnlocked=true;
-                requirements(Category.liquid, with(Items.copper, 0));
+                requirements(Category.defense, with(Items.copper, 0));
                 buildType = () -> new Building(){ 
                     @Override 
                     public void update() {
