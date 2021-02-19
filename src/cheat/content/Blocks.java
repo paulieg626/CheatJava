@@ -52,7 +52,7 @@ public class Blocks implements ContentList {
     }
     
     public void functions(){
-        liquid.buidType = new Building(){
+        liquid.buidType = ()-> new Building(){
             @Override
             public void updateTile(){
                 //this.health = Integer.MAX_VALUE;
