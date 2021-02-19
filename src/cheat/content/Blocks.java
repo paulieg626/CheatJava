@@ -16,6 +16,9 @@ import mindustry.world.blocks.storage.*;
 import mindustry.world.blocks.sandbox.*;
 import mindustry.world.meta.*;
 
+import arc.*;
+import arc.scene.ui.layout.*;
+
 import static mindustry.type.ItemStack.with;
 
 public class Blocks implements ContentList {
@@ -24,7 +27,9 @@ public class Blocks implements ContentList {
     //item
     item,
     //liquid
-    liquid;
+    liquid,
+    //wall
+    wall;
 
     @Override
     public void load() {
