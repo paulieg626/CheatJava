@@ -64,12 +64,12 @@ public class Blocks implements ContentList {
                     public void update() {
                         this.health = Integer.MAX_VALUE;
                     }
-                    @Override
+                    /*@Override testing
                     public void buildConfiguration(Table table) {
                       table.button(new TextureRegionDrawable(Core.atlas.find("item-copper")), Styles.clearToggleTransi, () -> { 
                         
                       });
-                    }
+                    }*/
                 };
             }
         };
