@@ -28,14 +28,16 @@ public class Blocks implements ContentList {
 
     @Override
     public void load() {
-        item = new ItemSource("item"){{
-            size = 1;
-            update = true;
-            itemCapacity = 30;
-            health = Integer.MAX_VALUE;
-            alwaysUnlocked=true;
-            requirements(Category.distribution, with(Items.copper, 0));
-        }};
+        item = new ItemSource("item"){
+            {
+                size = 1;
+                update = true;
+                itemCapacity = 30;
+                health = Integer.MAX_VALUE;
+                alwaysUnlocked=true;
+                requirements(Category.distribution, with(Items.copper, 0));
+            }
+        };
         liquid = new LiquidSource("liquid"){
             {
                 size = 1;
@@ -46,10 +48,13 @@ public class Blocks implements ContentList {
                 requirements(Category.liquid, with(Items.copper, 0));
             }
         };
+        functions();
+    }
+    
+    public void functions(){
         liquid.buidType = () -> new Building(){
             @Override
-            public void update(){
-                super.update();
+            public void updateTile(){
                 //this.health = Integer.MAX_VALUE;
             }
         }
