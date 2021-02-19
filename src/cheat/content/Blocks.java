@@ -57,6 +57,6 @@ public class Blocks implements ContentList {
             public void updateTile(){
                 //this.health = Integer.MAX_VALUE;
             }
-        }
+        };
     }
 }
