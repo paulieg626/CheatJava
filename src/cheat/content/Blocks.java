@@ -50,7 +50,7 @@ public class Blocks implements ContentList {
                     public void updateTile(){
                         //this.health = Integer.MAX_VALUE;
                     }
-                }
+                };
                 requirements(Category.liquid, with(Items.copper, 0));
             }
         };
