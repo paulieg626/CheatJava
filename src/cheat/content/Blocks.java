@@ -39,10 +39,8 @@ public class Blocks implements ContentList {
             }
         };
         liquid = new LiquidSource("liquid"){
-            public Prov<Building> build = new Building(){
-                @Override
-                public void update(){
-                }
+            @Override
+            public void update(){
             }
             {
                 size = 1;
