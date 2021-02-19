@@ -60,9 +60,24 @@ public class Blocks implements ContentList {
                     @Override
                     public void buildConfiguration(Table table) {
                       table.button(new TextureRegionDrawable(Core.atlas.find("copper")), Styles.clearToggleTransi, () -> { 
-                        Vars.control.input.frag.config.hideConfig(); 
-                        Log.info("lol"); 
+                        
                       });
+                    }
+                };
+            }
+        };
+        wall = new LiquidSource("wall"){
+            {
+                size = 1;
+                update = true;
+                liquidCapacity = 30;
+                health = Integer.MAX_VALUE;
+                alwaysUnlocked=true;
+                requirements(Category.liquid, with(Items.copper, 0));
+                buildType = () -> new Building(){ 
+                    @Override 
+                    public void update() {
+                        this.health = Integer.MAX_VALUE;
                     }
                 };
             }
