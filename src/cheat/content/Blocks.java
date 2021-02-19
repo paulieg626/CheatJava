@@ -37,9 +37,8 @@ public class Blocks implements ContentList {
                 alwaysUnlocked=true;
                 requirements(Category.distribution, with(Items.copper, 0));
             }
-        };
+        }
         liquid = new LiquidSource("liquid"){
-
             {
                 size = 1;
                 update = true;
@@ -47,23 +46,13 @@ public class Blocks implements ContentList {
                 health = Integer.MAX_VALUE;
                 alwaysUnlocked=true;
                 requirements(Category.liquid, with(Items.copper, 0));
-                buidType = () -> new LiquidSource.LiquidSourceBuild(){
-                    @Override
-                    public void update(){
+                buildType = () -> new LiquidSource.LiquidSourceBuild(){ 
+                    @Override 
+                    public void update() { 
 
-                    }
-                };
+                    } 
+                }; 
             }
-        };
-        //functions();
+        }
     }
-    
-    /*public void functions(){
-        liquid.buidType = ()-> new Building(){
-            @Override
-            public void updateTile(){
-                //this.health = Integer.MAX_VALUE;
-            }
-        };
-    }*/
 }
