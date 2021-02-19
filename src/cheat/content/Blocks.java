@@ -37,7 +37,7 @@ public class Blocks implements ContentList {
                 alwaysUnlocked=true;
                 requirements(Category.distribution, with(Items.copper, 0));
             }
-        }
+        };
         liquid = new LiquidSource("liquid"){
             {
                 size = 1;
@@ -53,6 +53,6 @@ public class Blocks implements ContentList {
                     } 
                 }; 
             }
-        }
+        };
     }
 }
