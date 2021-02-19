@@ -15,6 +15,7 @@ import mindustry.world.blocks.experimental.*;
 import mindustry.world.blocks.storage.*;
 import mindustry.world.blocks.sandbox.*;
 import mindustry.world.meta.*;
+import mindustry.ui.*;
 
 import arc.*;
 import arc.scene.ui.layout.*;
