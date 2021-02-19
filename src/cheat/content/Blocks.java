@@ -45,7 +45,7 @@ public class Blocks implements ContentList {
                 liquidCapacity = 30;
                 health = Integer.MAX_VALUE;
                 alwaysUnlocked=true;
-                buidType = ()-> new Building(){
+                buidType = new Building(){
                     @Override
                     public void updateTile(){
                         //this.health = Integer.MAX_VALUE;
