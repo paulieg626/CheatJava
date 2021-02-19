@@ -40,7 +40,11 @@ public class Blocks implements ContentList {
         };
         liquid = new LiquidSource("liquid"){
             @Override
-            public void update(){
+            public Prov<Building> buidType = new Building(){
+                @Override
+                public void update(){
+                    
+                }
             }
             {
                 size = 1;
@@ -48,7 +52,6 @@ public class Blocks implements ContentList {
                 liquidCapacity = 30;
                 health = Integer.MAX_VALUE;
                 alwaysUnlocked=true;
-                buidType = build;
                 requirements(Category.liquid, with(Items.copper, 0));
             }
         };
