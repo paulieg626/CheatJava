@@ -45,18 +45,24 @@ public class Blocks implements ContentList {
                 liquidCapacity = 30;
                 health = Integer.MAX_VALUE;
                 alwaysUnlocked=true;
+                buidType = ()-> new Building(){
+                    @Override
+                    public void updateTile(){
+                        //this.health = Integer.MAX_VALUE;
+                    }
+                }
                 requirements(Category.liquid, with(Items.copper, 0));
             }
         };
-        functions();
+        //functions();
     }
     
-    public void functions(){
+    /*public void functions(){
         liquid.buidType = ()-> new Building(){
             @Override
             public void updateTile(){
                 //this.health = Integer.MAX_VALUE;
             }
         };
-    }
+    }*/
 }
