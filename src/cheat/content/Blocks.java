@@ -39,8 +39,8 @@ public class Blocks implements ContentList {
         liquid = new LiquidSource("liquid"){
             @Override
             public void updateTile(){
+                super.updateTile();
                 this.health = Integer.MAX_VALUE;
-
             }
             {
                 size = 1;
