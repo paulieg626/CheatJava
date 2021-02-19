@@ -23,10 +23,10 @@ jar {
 }
 
 task dexify(type: Jar) {
-    archiveName "$pArtifactFilename"
+    archiveName "dexed-$pArtifactFilename"
 
     final File jarArtifact = new File(tasks.jar.archiveFile.get().asFile.parent, pArtifactFilename),
-               dexedArtifact = new File(tasks.dexify.getTemporaryDir(), pArtifactFilename)
+               dexedArtifact = new File(tasks.dexify.getTemporaryDir(), "dexed.jar")
     doFirst {
         exec {
             workingDir dexedArtifact.parent
