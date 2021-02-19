@@ -66,7 +66,7 @@ public class Blocks implements ContentList {
                     }
                     @Override
                     public void buildConfiguration(Table table) {
-                      table.button(new TextureRegionDrawable(Core.atlas.find("copper")), Styles.clearToggleTransi, () -> { 
+                      table.button(new TextureRegionDrawable(Core.atlas.find("item-copper")), Styles.clearToggleTransi, () -> { 
                         
                       });
                     }
