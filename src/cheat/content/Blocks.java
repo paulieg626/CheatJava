@@ -52,7 +52,7 @@ public class Blocks implements ContentList {
                     public void update(){
 
                     }
-                }
+                };
             }
         };
         //functions();
